@@ -43,7 +43,7 @@ function change(){
         res.innerText="Player 'O' Won";
         bigbox.classList.add("resultfinal");
     }
-    else{
+    else if (turn>=9){
         res.innerText="Match Draw";
     }
 
