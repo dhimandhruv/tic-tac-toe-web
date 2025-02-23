@@ -43,6 +43,9 @@ function change(){
         res.innerText="Player 'O' Won";
         bigbox.classList.add("resultfinal");
     }
+    else{
+        res.innerText="Match Draw";
+    }
 
     
 }

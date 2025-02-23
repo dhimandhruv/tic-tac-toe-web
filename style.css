@@ -86,7 +86,34 @@ h2.header {
     align-items: center;
     
 }
-
+#one{
+    border-top: 0px;
+    border-left: 0px;
+}
+#two{
+    border-top: 0px;
+}
+#three{
+    border-top: 0px;
+    border-right: 0px;
+}
+#four{
+    border-left: 0px;
+}
+#six{
+    border-right: 0px;
+}
+#seven{
+    border-bottom: 0px;
+    border-left: 0px;
+}
+#eight{
+    border-bottom: 0px;
+}
+#nine{
+    border-bottom: 0px;
+    border-right: 0px;
+}
 .container div {
     width: 80px;
     height: 80px;
