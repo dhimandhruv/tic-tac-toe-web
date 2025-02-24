@@ -174,3 +174,9 @@ h2.header {
       transform: rotate(360deg);
     }
   }
+  .new{
+    background-color: #89B4FA ;
+    color: black;
+    align-items: center;
+    margin: auto;
+  }

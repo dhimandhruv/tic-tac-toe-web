@@ -10,6 +10,7 @@ let d8=document.querySelector("#eight");
 let d9=document.querySelector("#nine");
 let bigbox=document.querySelectorAll(".conatiner");
 let res=document.querySelector(".result");
+let btn=document.querySelector(".new");
 let turn=0;
 function result(){
     if(d1.innerText==d2.innerText &&d2.innerText==d3.innerText && d3.innerText=="X" || d4.innerText==d5.innerText &&d5.innerText==d6.innerText && d6.innerText=="X" || d7.innerText==d8.innerText &&d8.innerText==d9.innerText && d9.innerText=="X"/*row wise conition*/|| d1.innerText==d4.innerText &&d4.innerText==d7.innerText && d7.innerText=="X"||d2.innerText==d5.innerText &&d5.innerText==d8.innerText && d8.innerText=="X"||d3.innerText==d6.innerText &&d6.innerText==d9.innerText && d9.innerText=="X"||d1.innerText==d5.innerText &&d5.innerText==d9.innerText && d9.innerText=="X"||d3.innerText==d5.innerText &&d5.innerText==d7.innerText && d7.innerText=="X"){
@@ -36,12 +37,12 @@ function change(){
     if(c==1){
         console.log("player 1 won");
         res.innerText="Player 'X' Won";
-        bigbox.classList.add("resultfinal");
+        //bigbox.classList.add("resultfinal");
     }
     else if(c==2){
         console.log("player 2 won");
         res.innerText="Player 'O' Won";
-        bigbox.classList.add("resultfinal");
+        //bigbox.classList.add("resultfinal");
     }
     else if (turn>=9){
         res.innerText="Match Draw";
@@ -53,3 +54,9 @@ function change(){
 for (bx of box){
     bx.addEventListener("click",change)
 }
+
+function newGame(){
+    location.reload();
+    
+}
+btn.addEventListener("click",newGame);
